@@ -1,0 +1,603 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>System.Win32.NET</name>
+    </assembly>
+    <members>
+        <member name="T:System32.BitOperations.Bit">
+            <summary>
+             Provides set of static methods for manipulating the
+             bits of a number.
+             NOTE: This type is Cross-Platform.
+            </summary>
+        </member>
+        <member name="M:System32.BitOperations.Bit.ChangeBitAt(System.Int64,System.Int32,System32.BitOperations.BitState)">
+            <summary>
+             Changes the specified bit.
+            </summary>
+            <param name="number">The number</param>
+            <param name="bitPosition">The position of the bit.</param>
+            <param name="bitState">The state of the bit.</param>
+            <returns>The new number.</returns>
+        </member>
+        <member name="M:System32.BitOperations.Bit.InvertAllBits(System.Int64)">
+            <summary>
+             Inverts all the bits of the number.
+            </summary>
+            <param name="number">
+             The number witch bits to invert.
+            </param>
+            <returns>
+             The new number.
+            </returns>
+        </member>
+        <member name="M:System32.BitOperations.Bit.SetAllBits(System.Int64,System32.BitOperations.BitState)">
+            <summary>
+             Sets all bits to the specified number with the specifed value.
+            </summary>
+            <param name="number">
+             The number.
+            </param>
+            <param name="bitState">
+             The state of the bits.
+            </param>
+            <returns>
+             The new number.
+            </returns>
+        </member>
+        <member name="T:System32.BitOperations.BitState">
+            <summary>
+             Describes the state of a bit.
+            </summary>
+        </member>
+        <member name="F:System32.BitOperations.BitState.Active">
+            <summary>
+             Specifies that the bit is active.
+            </summary>
+        </member>
+        <member name="F:System32.BitOperations.BitState.Inactive">
+            <summary>
+             Specifies that the bit is inactive.
+            </summary>
+        </member>
+        <member name="F:System32.BitOperations.BitState.Switch">
+            <summary>
+             Specifies that the bit value should be switched.
+            </summary>
+        </member>
+        <member name="T:System32.GUI.MessageWindow">
+            <summary>
+             Provides static method for opening Windows dialog window.
+            </summary>
+        </member>
+        <member name="M:System32.GUI.MessageWindow.Show(System.String,System.String,System.Nullable{System32.GUI.WindowType})">
+            <summary>
+             Shows dialog window.
+            </summary>
+            <param name="message">The message of the window</param>
+            <param name="title">The title of the window</param>
+            <param name="windowType">The type of the window</param>
+            <returns>The result from the window.</returns>
+        </member>
+        <member name="T:System32.GUI.Response">
+            <summary>
+             Specifies the response from <see cref="T:System32.GUI.MessageWindow"/>.
+            </summary>
+        </member>
+        <member name="F:System32.GUI.Response.OK">
+            <summary>
+             Button Ok is pressed.
+            </summary>
+        </member>
+        <member name="F:System32.GUI.Response.Cancel">
+            <summary>
+            Button Cancel is pressed.
+            </summary>
+        </member>
+        <member name="F:System32.GUI.Response.Abort">
+            <summary>
+            Button Abort is pressed.
+            </summary>
+        </member>
+        <member name="F:System32.GUI.Response.Retry">
+            <summary>
+            Button Retry is pressed.
+            </summary>
+        </member>
+        <member name="F:System32.GUI.Response.Ignore">
+            <summary>
+            Button Ignore is pressed.
+            </summary>
+        </member>
+        <member name="F:System32.GUI.Response.Yes">
+            <summary>
+            Button Yes is pressed.
+            </summary>
+        </member>
+        <member name="F:System32.GUI.Response.No">
+            <summary>
+            Button No is pressed.
+            </summary>
+        </member>
+        <member name="F:System32.GUI.Response.TryAgain">
+            <summary>
+            Button Try again is pressed.
+            </summary>
+        </member>
+        <member name="F:System32.GUI.Response.Continue">
+            <summary>
+            Button Continue is pressed.
+            </summary>
+        </member>
+        <member name="T:System32.GUI.WindowType">
+            <summary>
+             Specifies the type of the <see cref="T:System32.GUI.MessageWindow"/>.
+            </summary>
+        </member>
+        <member name="F:System32.GUI.WindowType.WithButtonOK">
+            <summary>
+             With Ok button.
+            </summary>
+        </member>
+        <member name="F:System32.GUI.WindowType.WithButtonsYesNo">
+            <summary>
+             With buttons Yes and No.
+            </summary>
+        </member>
+        <member name="F:System32.GUI.WindowType.WithButtonOKCancel">
+            <summary>
+             With buttons OK and Cancel.
+            </summary>
+        </member>
+        <member name="F:System32.GUI.WindowType.WithButtonsYesNoCancel">
+            <summary>
+             With buttons Yes, No and Cancel.
+            </summary>
+        </member>
+        <member name="F:System32.GUI.WindowType.WithButtonsRetryCancel">
+            <summary>
+             With buttons Retry and Cancel.
+            </summary>
+        </member>
+        <member name="F:System32.GUI.WindowType.WithButtonsAbortRetryIgnore">
+            <summary>
+             With buttons Abort, Retry and Ignore.
+            </summary>
+        </member>
+        <member name="F:System32.GUI.WindowType.WithButtonsCancelTryAgainContinue">
+            <summary>
+             With buttons Cancel, Try again and Continue.
+            </summary>
+        </member>
+        <member name="F:System32.GUI.WindowType.WithErrorIcon">
+            <summary>
+             With error icon.
+            </summary>
+        </member>
+        <member name="F:System32.GUI.WindowType.WithQuestionMark">
+            <summary>
+             With question mark icon.
+            </summary>
+        </member>
+        <member name="F:System32.GUI.WindowType.WithWarningIcon">
+            <summary>
+             With warning icon.
+            </summary>
+        </member>
+        <member name="F:System32.GUI.WindowType.WithInfoIcon">
+            <summary>
+             With info icon.
+            </summary>
+        </member>
+        <member name="T:System32.Memory.Memory">
+            <summary>
+             Provides static methods for allocating, releasing and etc.. of block of memory.
+            </summary>
+        </member>
+        <member name="M:System32.Memory.Memory.Allocate(System.UInt32)">
+            <summary>
+             Allocates block of memory with specified length(<paramref name="bytesCount"/>)
+             and returns pointer to the first byte. The pointer is converted as nint.
+            </summary>
+            <param name="bytesCount">
+             The count of the bytes to allocate.
+            </param>
+            <returns>
+             Pointer to the first byte of the allocated memory block.
+            </returns>
+        </member>
+        <member name="M:System32.Memory.Memory.Reallocate(System.IntPtr,System.UInt32)">
+            <summary>
+             Resizes the block of memory specified with <paramref name="memoryPointer"/>
+             and move its to another place in the memory if needed.
+            </summary>
+            <param name="memoryPointer">
+             The pointer to the memory to resize and optionally reallocate.
+            </param>
+            <param name="newSizeInBytes">
+             The new size of the memory block in bytes.
+            </param>
+            <returns>
+             Pointer to the first byte of the resized block.
+             If the memory block is not reallocated, only resized, 
+             the address is still the same.
+            </returns>
+        </member>
+        <member name="M:System32.Memory.Memory.Free(System.IntPtr)">
+            <summary>
+             Releases the memory used by the specified object.
+            </summary>
+            <param name="dynamicObject">
+             The memory to release
+            </param>
+        </member>
+        <member name="T:System32.ProcessLauncher.Launcher">
+            <summary>
+             Provides static method for launching a system process.
+             Note that type is cross-platform, so works on Windows,
+             Linux and MacOS.
+            </summary>
+        </member>
+        <member name="M:System32.ProcessLauncher.Launcher.Launch(System.String)">
+            <summary>
+             Starts system process.
+             This command works with C function system(const char* cmd)
+             in the background. It cannot open URL links for example.
+             The process name/path is opened by the CommandPrompt.
+            </summary>
+            <param name="process">
+             The process to be started.
+            </param>
+            <returns>
+             The exit code of the process - 0 if success, -1 if something went wrong.
+            </returns>
+        </member>
+        <member name="T:System32.Terminal.Terminal">
+            <summary>
+             Provides methods for console I/O.
+            </summary>
+        </member>
+        <member name="M:System32.Terminal.Terminal.GetLine">
+            <summary>
+             Reads the next line of input from the console.
+            </summary>
+            <returns>
+             The next line of input as string.
+            </returns>
+        </member>
+        <member name="M:System32.Terminal.Terminal.Print(System.Object)">
+            <summary>
+             Prints the data to the console.
+            </summary>
+            <param name="data">
+             The data to be printed.
+            </param>
+            <returns>
+             The number of the printed symbols.
+            </returns>
+        </member>
+        <member name="M:System32.Terminal.Terminal.PrintLine(System.Object)">
+            <summary>
+             Prints the data to the console followed by a new line.
+            </summary>
+            <param name="data">
+             The data to be printed.
+            </param>
+            <returns>
+             The number of the printed symbols.
+            </returns>
+        </member>
+        <member name="M:System32.Terminal.Terminal.ChangeTerminalColors(System32.Terminal.TerminalForeground,System32.Terminal.TerminalBackground)">
+            <summary>
+             Changes the foreground color of the terminal.
+            </summary>
+            <param name="foregroundColor">
+             The new foreground color.
+            </param>
+            <param name="backgroundColor">
+             The new background color.
+            </param>
+        </member>
+        <member name="M:System32.Terminal.Terminal.ResetColors">
+            <summary>
+             Reset the original white foreground color.
+            </summary>
+        </member>
+        <member name="M:System32.Terminal.Terminal.Beep(System.Int32,System.Nullable{System.Int32})">
+            <summary>
+             Beeps with the specified frequency with duration
+             the specified time in milliseconds.
+            </summary>
+            <param name="duration">
+             The duration of the sound in milliseconds.
+            </param>
+            <param name="frequency">
+             The frequency of the sound.
+            </param>
+        </member>
+        <member name="T:System32.Terminal.TerminalBackground">
+            <summary>
+             Provides flags that specifies terminal background colors.
+            </summary>
+        </member>
+        <member name="F:System32.Terminal.TerminalBackground.DarkBlue">
+            <summary>
+             Dark blue.
+            </summary>
+        </member>
+        <member name="F:System32.Terminal.TerminalBackground.DarkGreen">
+            <summary>
+             Dark green.
+            </summary>
+        </member>
+        <member name="F:System32.Terminal.TerminalBackground.DarkRed">
+            <summary>
+             Dark red.
+            </summary>
+        </member>
+        <member name="F:System32.Terminal.TerminalBackground.LightBlue">
+            <summary>
+             Light blue.
+            </summary>
+        </member>
+        <member name="F:System32.Terminal.TerminalBackground.LightGreen">
+            <summary>
+             Light green.
+            </summary>
+        </member>
+        <member name="F:System32.Terminal.TerminalBackground.LightRed">
+            <summary>
+             Light red.
+            </summary>
+        </member>
+        <member name="F:System32.Terminal.TerminalBackground.Cyan">
+            <summary>
+             Cyan.
+            </summary>
+        </member>
+        <member name="F:System32.Terminal.TerminalBackground.Magenta">
+            <summary>
+             Magenta.
+            </summary>
+        </member>
+        <member name="F:System32.Terminal.TerminalBackground.White">
+            <summary>
+             White.
+            </summary>
+        </member>
+        <member name="F:System32.Terminal.TerminalBackground.Black">
+            <summary>
+             Black.
+            </summary>
+        </member>
+        <member name="T:System32.Terminal.TerminalForeground">
+            <summary>
+             Provides foreground colors for the Terminal.cs class.
+            </summary>
+        </member>
+        <member name="F:System32.Terminal.TerminalForeground.DarkRed">
+            <summary>
+             Dark red.
+            </summary>
+        </member>
+        <member name="F:System32.Terminal.TerminalForeground.DarkGreen">
+            <summary>
+             Dark green.
+            </summary>
+        </member>
+        <member name="F:System32.Terminal.TerminalForeground.DarkBlue">
+            <summary>
+             Dark blue
+            </summary>
+        </member>
+        <member name="F:System32.Terminal.TerminalForeground.LightRed">
+            <summary>
+             Light red.
+            </summary>
+        </member>
+        <member name="F:System32.Terminal.TerminalForeground.LightGreen">
+            <summary>
+             Light green.
+            </summary>
+        </member>
+        <member name="F:System32.Terminal.TerminalForeground.LightBlue">
+            <summary>
+             Light blue.
+            </summary>
+        </member>
+        <member name="F:System32.Terminal.TerminalForeground.Cyan">
+            <summary>
+             Cyan.
+            </summary>
+        </member>
+        <member name="F:System32.Terminal.TerminalForeground.Magenta">
+            <summary>
+             Magenta.
+            </summary>
+        </member>
+        <member name="F:System32.Terminal.TerminalForeground.White">
+            <summary>
+             White.
+            </summary>
+        </member>
+        <member name="F:System32.Terminal.TerminalForeground.Black">
+            <summary>
+             Black.
+            </summary>
+        </member>
+        <member name="T:System32.Web.WebBrowser">
+            <summary>
+             Provides static method for launching the default web browser
+             of the machine.
+             NOTE: This type is cross-platform!
+            </summary>
+        </member>
+        <member name="M:System32.Web.WebBrowser.Open(System.String)">
+            <summary>
+             Opens the default web browser of the machine and
+             navigates to the specified link. If no link is specified
+             the Google main page will be loaded.
+            </summary>
+            <param name="url">
+             Optional url address to load on start.
+            </param>
+        </member>
+        <member name="T:System32.WindowsAppManager.Internal.WindowsAppsCore">
+            <summary>
+             Provides set of static methods for opening various list of windows applications.
+             All methods of this class runs only on Windows OS.
+            </summary>
+        </member>
+        <member name="M:System32.WindowsAppManager.Internal.WindowsAppsCore.OpenCalculator">
+            <summary>
+             Opens the Calculator.
+            </summary>
+        </member>
+        <member name="M:System32.WindowsAppManager.Internal.WindowsAppsCore.OpenNotepad">
+            <summary>
+             Opens the Notepad.
+            </summary>
+        </member>
+        <member name="M:System32.WindowsAppManager.Internal.WindowsAppsCore.OpenPaint">
+            <summary>
+             Opens Paint.
+            </summary>
+        </member>
+        <member name="M:System32.WindowsAppManager.Internal.WindowsAppsCore.OpenSnippingTool">
+            <summary>
+             Opens the Snipping tool for screenshots.
+            </summary>
+        </member>
+        <member name="M:System32.WindowsAppManager.Internal.WindowsAppsCore.OpenTerminal">
+            <summary>
+             Opens the terminal/command propmt
+            </summary>
+        </member>
+        <member name="M:System32.WindowsAppManager.Internal.WindowsAppsCore.OpenPowershell">
+            <summary>
+             Opens the Powershell terminal.
+            </summary>
+        </member>
+        <member name="M:System32.WindowsAppManager.Internal.WindowsAppsCore.OpenTaskManager">
+            <summary>
+             Opens the Task Manager.
+            </summary>
+        </member>
+        <member name="M:System32.WindowsAppManager.Internal.WindowsAppsCore.OpenControlPanel">
+            <summary>
+             Opens the Control Panel.
+            </summary>
+        </member>
+        <member name="M:System32.WindowsAppManager.Internal.WindowsAppsCore.OpenServices">
+            <summary>
+             Opens Services.
+            </summary>
+        </member>
+        <member name="M:System32.WindowsAppManager.Internal.WindowsAppsCore.OpenRegistryEditor">
+            <summary>
+             Opens the Registry editor.
+            </summary>
+        </member>
+        <member name="M:System32.WindowsAppManager.Internal.WindowsAppsCore.OpenResourceMonitor">
+            <summary>
+             Opens the Resource Monitor
+            </summary>
+        </member>
+        <member name="M:System32.WindowsAppManager.Internal.WindowsAppsCore.OpenFileManager(System.String)">
+            <summary>
+             Opens the file manager with at the specified directory.
+            </summary>
+            <param name="path">
+             The directory to open. If not specified, the Desktop directory will load.
+            </param>
+        </member>
+        <member name="T:System32.WindowsAppManager.SystemFolders">
+            <summary>
+             Provides constant strings that specifies system folders paths.
+             Use it in System32.WindowsAppManager.WindowsApps.OpenFileManager() method to 
+             specify system folder to open.
+            </summary>
+        </member>
+        <member name="P:System32.WindowsAppManager.SystemFolders.Desktop">
+            <summary>
+             Specifies the Desktop directory
+            </summary>
+        </member>
+        <member name="P:System32.WindowsAppManager.SystemFolders.Documents">
+            <summary>
+             Specifies the Documents directory
+            </summary>
+        </member>
+        <member name="T:System32.WindowsAppManager.WindowsApps">
+            <summary>
+             Provides set of static methods for opening various list of windows applications.
+             All methods of this class runs only on Windows OS.
+            </summary>
+        </member>
+        <member name="M:System32.WindowsAppManager.WindowsApps.OpenCalculator">
+            <summary>
+             Opens the Calculator.
+            </summary>
+        </member>
+        <member name="M:System32.WindowsAppManager.WindowsApps.OpenNotepad">
+            <summary>
+             Opens the Notepad.
+            </summary>
+        </member>
+        <member name="M:System32.WindowsAppManager.WindowsApps.OpenPaint">
+            <summary>
+             Opens Paint.
+            </summary>
+        </member>
+        <member name="M:System32.WindowsAppManager.WindowsApps.OpenSnippingTool">
+            <summary>
+             Opens the Snipping tool for screenshots.
+            </summary>
+        </member>
+        <member name="M:System32.WindowsAppManager.WindowsApps.OpenTerminal">
+            <summary>
+             Opens the terminal/command propmt
+            </summary>
+        </member>
+        <member name="M:System32.WindowsAppManager.WindowsApps.OpenPowershell">
+            <summary>
+             Opens the Powershell terminal.
+            </summary>
+        </member>
+        <member name="M:System32.WindowsAppManager.WindowsApps.OpenTaskManager">
+            <summary>
+             Opens the Task Manager.
+            </summary>
+        </member>
+        <member name="M:System32.WindowsAppManager.WindowsApps.OpenControlPanel">
+            <summary>
+             Opens the Control Panel.
+            </summary>
+        </member>
+        <member name="M:System32.WindowsAppManager.WindowsApps.OpenServices">
+            <summary>
+             Opens Services.
+            </summary>
+        </member>
+        <member name="M:System32.WindowsAppManager.WindowsApps.OpenRegistryEditor">
+            <summary>
+             Opens the Registry editor.
+            </summary>
+        </member>
+        <member name="M:System32.WindowsAppManager.WindowsApps.OpenResourceMonitor">
+            <summary>
+             Opens the Resource Monitor
+            </summary>
+        </member>
+        <member name="M:System32.WindowsAppManager.WindowsApps.OpenFileManager(System.String)">
+            <summary>
+             Opens the file manager with at the specified directory.
+            </summary>
+            <param name="path">
+             The directory to open. 
+             If not specified, the Desktop directory will load.
+             You can also specify the path with System32.WindowsAppManager.SystemFolder.XXX properties.
+            </param>
+        </member>
+    </members>
+</doc>
