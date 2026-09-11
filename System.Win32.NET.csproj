@@ -8,8 +8,4 @@
 	  <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Compiled ready-to-use DLL\" />
-  </ItemGroup>
-
 </Project>
