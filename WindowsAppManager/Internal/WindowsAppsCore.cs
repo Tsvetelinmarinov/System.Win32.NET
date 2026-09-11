@@ -9,7 +9,7 @@
     ///  Provides set of static methods for opening various list of windows applications.
     ///  All methods of this class runs only on Windows OS.
     /// </summary>
-    public sealed class WindowsAppsCore : IWindowsAppsCore
+    internal sealed class WindowsAppsCore : IWindowsAppsCore
     {
         #region Private Fields
 
