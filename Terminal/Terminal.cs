@@ -5,23 +5,23 @@ namespace System32.Terminal
     /// <summary>
     ///  Provides methods for console I/O.
     /// </summary>
-    public sealed class Terminal
+    public static class Terminal
     {
         #region Private Fields
 
         // Internal Terminal object.
-        private static readonly ITerminalCore s_CoreTerminal
-            = TerminalFactory.GetTerminal();
+        private static readonly ITerminalCore s_CoreTerminal;
 
         #endregion
 
         #region Constructor
 
-        // Private ctor.
+        // Static type ctor.
         // This type is not designed to be instantiated.
         // Use the static methods instead to do the job.
-        private Terminal()
-        { 
+        static Terminal()
+        {
+            s_CoreTerminal = TerminalFactory.GetTerminal();
         }
 
         #endregion
