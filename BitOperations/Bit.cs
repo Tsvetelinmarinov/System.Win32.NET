@@ -22,7 +22,7 @@ namespace System32.BitOperations
         // core bit class safety.
         static Bit()
         {
-            s_CoreBitManager = BitFactory.CreateBitManager();
+            s_CoreBitManager = BitFactory.CreateManager();
         }
 
         #endregion

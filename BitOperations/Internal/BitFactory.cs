@@ -2,7 +2,7 @@
 {
     internal static class BitFactory
     {
-        internal static IBitCore CreateBitManager()
+        public static IBitCore CreateManager()
             => new BitCore();
     }
 }

@@ -13,7 +13,7 @@ namespace System32.BitOperations.Internal
         public IntType ChangeBitAtCore<IntType>(IntType number, int bitPosition, BitState bitState)
             where IntType : IBinaryInteger<IntType>              
         {
-            if (Convert.ToInt32(bitPosition) < 0)
+            if (bitPosition < 0)
             {
                 throw new ArgumentException(Errors.InvalidBitPosition, nameof(bitPosition));
             }
