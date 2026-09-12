@@ -1,6 +1,6 @@
 ﻿using System32.WindowsAppManager.Internal;
 
-namespace System32.WindowsAppManager
+namespace System32.WindowsAppsManager
 {
     /// <summary>
     ///  Provides set of static methods for opening various list of windows applications.
