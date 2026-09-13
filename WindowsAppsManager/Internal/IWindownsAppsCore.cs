@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Runtime.CompilerServices;
 
-namespace System32.WindowsAppManager.Internal
+namespace System32.WindowsAppsManager.Internal
 {
     internal interface IWindowsAppsCore
     {

@@ -1,4 +1,4 @@
-﻿namespace System32.WindowsAppManager.Internal
+﻿namespace System32.WindowsAppsManager.Internal
 {
     internal static class WindowsAppsManagerFactory
     {

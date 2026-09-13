@@ -1,4 +1,4 @@
-﻿using System32.WindowsAppManager.Internal;
+﻿using System32.WindowsAppsManager.Internal;
 
 namespace System32.WindowsAppsManager
 {
